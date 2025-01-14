@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin Robert Andrews</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +18,10 @@
     />
 
     <style>
+      :root {
+        --brand-colour: #ffa047;
+      }
+
       * {
         margin: 0;
         box-sizing: border-box;
@@ -24,15 +32,11 @@
         color: hsl(0, 0%, 9%);
         display: flex;
         justify-content: center;
-      }
-
-      body {
-        background-color: hsl(35, 51%, 89%);
+        background-image: linear-gradient(#ffcc33, #ffa047);
       }
 
       a {
-        color: rgb(255, 115, 0);
-        cursor: copy;
+        color: var(--brand-colour);
       }
 
       .container {
@@ -70,9 +74,32 @@
         font-size: 1.6rem;
         margin-bottom: 1rem;
       }
+
+      .curtain {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: fadeIn 0.5s normal forwards cubic-bezier(1, 0, 0.705, 0.62);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 1;
+          background-color: white;
+        }
+        to {
+          opacity: 0;
+          background-color: transparent;
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
+    <div class="curtain"></div>
+
     <div class="container">
       <header>
         <h1>Kevin Robert Andrews</h1>
@@ -85,6 +112,7 @@
           building for the web. I'm am interested and searching for
           opportunities to broaden my experience with web technologies.
         </p>
+        <br />
         <a href="mailto:work@kevinrobertandrews.com"
           >work@kevinrobertandrews.com</a
         >
