@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Kevin Robert Andrews</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="styles.css" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,85 +19,6 @@
       href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      :root {
-        --brand-colour: #ffa047;
-      }
-
-      * {
-        margin: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Poppins", sans-serif;
-        color: hsl(0, 0%, 9%);
-        display: flex;
-        justify-content: center;
-        background-image: linear-gradient(#ffcc33, #ffa047);
-      }
-
-      a {
-        color: var(--brand-colour);
-      }
-
-      .container {
-        padding: 4rem;
-      }
-
-      header {
-        margin-bottom: 2rem;
-      }
-
-      .callout {
-        background-color: #000000;
-        color: white;
-        padding: 2rem;
-        margin-bottom: 2rem;
-        border-radius: 8px;
-        font-size: 1.4rem;
-      }
-
-      .block {
-        margin-bottom: 2rem;
-      }
-
-      h1 {
-        font-size: 2.8rem;
-      }
-
-      h1,
-      h3 {
-        font-family: "Poetsen One", serif;
-      }
-
-      h3 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-      }
-
-      .curtain {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        animation: fadeIn 0.5s normal forwards cubic-bezier(1, 0, 0.705, 0.62);
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 1;
-          background-color: white;
-        }
-        to {
-          opacity: 0;
-          background-color: transparent;
-          display: none;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="curtain"></div>
@@ -105,7 +29,7 @@
         <h2>Full Stack Web Developer</h2>
       </header>
 
-      <div class="callout">
+      <section class="callout">
         <p>
           I am a web developer based in Ottawa, Canada with 4 years experience
           building for the web. I'm am interested and searching for
@@ -115,18 +39,18 @@
         <a href="mailto:work@kevinrobertandrews.com"
           >work@kevinrobertandrews.com</a
         >
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="summary">
         <h3>Summary</h3>
         <p>
           I am a passionate web developer looking to expand my network and
           experience working with web technologies. The main technologies I have
           experience with are Angular, NodeJS, and TypeScript.
         </p>
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="technical-sckills">
         <h3>Technical Skills</h3>
         <ul>
           <li>Web Technologies: HTML, CSS, JavaScript, SASS, JSON</li>
@@ -138,12 +62,17 @@
           <li>IDE: VSCode, GitBash</li>
           <li>Others: RxJS, Docker, Obsidian</li>
         </ul>
-      </div>
-      <div class="block">
+      </section>
+
+      <section class="proffessional-experience">
         <h3>Professional Experience</h3>
+
+        <br />
 
         <h4>Software Developer</h4>
         <p>LSWorks / Neuralign, July 2021 - January 2025</p>
+
+        <br />
 
         <p>
           I currently work at a LSWorks where we are building a global platform
@@ -151,6 +80,8 @@
           cognitive therapy program, called Neuralign, that teaches children
           with dyslexia how to read.
         </p>
+
+        <br />
 
         <p>I have three and a half years experience with:</p>
 
@@ -200,8 +131,9 @@
           </li>
           <li>Unit testing components and services with Jest.</li>
         </ul>
-      </div>
-      <div class="block">
+      </section>
+
+      <section class="education">
         <h3>Education</h3>
 
         <ul>
@@ -211,9 +143,9 @@
             Masters, Udemy, and Angular University.
           </li>
         </ul>
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="soft-skills">
         <h3>Soft Skills</h3>
 
         <ul>
@@ -228,16 +160,16 @@
           <li>Problem-solving</li>
         </ul>
         <p></p>
-      </div>
+      </section>
 
-      <div class="block">
+      <section class="hobbies">
         <h3>Hobbies</h3>
         <ul>
           <li>Music</li>
           <li>Cooking</li>
           <li>Golf</li>
         </ul>
-      </div>
+      </section>
     </div>
   </body>
 </html>

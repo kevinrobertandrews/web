@@ -4,8 +4,7 @@
   "description": "My personal website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash automation/deploy.sh"
   },
   "keywords": [],
   "author": "Kevin Andrews <kevinrobertandrews@gmail.com>",
